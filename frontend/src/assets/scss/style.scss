@@ -1,0 +1,230 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+.card-header:not(.content-center) > .c-icon:first-child {
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  vertical-align: top;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1.2rem;
+}
+.c-app.c-dark-theme {
+    --primary: #4638c2;
+    --secondary: #4c4f54;
+    --success: #45a164;
+    --info: #4799eb;
+    --warning: #e1a82d;
+    --danger: #d16767;
+    --light: #20202a;
+    --dark: #181924;
+    color: #e1e1e1;
+    background-color: #0a0b18;
+    --color: #e1e1e1;
+}
+.c-dark-theme .c-sidebar {
+  color: #e1e1e1;
+  background: #2c2c34;
+  border: 0;
+}
+.c-dark-theme .c-header {
+  background: #2c2c34;
+  border-bottom: 0;
+}
+.c-dark-theme .c-header .c-header-nav .c-header-nav-link, .c-dark-theme .c-header .c-header-nav .c-header-nav-btn {
+  color: rgba(255,255,255,.75);
+}
+.c-dark-theme .card {
+  background-color: #23242d;
+  border-color: #181924;
+}
+.c-dark-theme .card-header {
+  background-color: #20202a;
+  border-color: #181924;
+}
+.c-dark-theme .c-footer {
+  color: #e1e1e1;
+  background: #1e1e29;
+  border-top: 1px solid #181924;
+}
+.c-dark-theme .c-sidebar .c-sidebar-minimizer:hover {
+  background-color: rgba(0,0,0,.3);
+}
+.c-dark-theme .c-header .c-subheader {
+  margin-top: -1px;
+  border-top: 1px solid #181924;
+}
+.c-dark-theme .c-subheader {
+  background: #2c2c34;
+  border-bottom: 0;
+}
+
+.c-dark-theme .progress-bar {
+  color: #fff;
+  background-color: #4638c2;
+}
+.c-dark-theme .progress {
+  background-color: rgba(255,255,255,.2);
+}
+.c-dark-theme .bg-success {
+  background: #2e8c47!important;
+  background: linear-gradient(45deg,#45a164 0%,#2e8c47 100%)!important;
+  border-color: #2e8c47!important;
+}
+.c-dark-theme .bg-info {
+  background: #4280b4!important;
+  background: linear-gradient(45deg,#4799eb 0%,#4280b4 100%)!important;
+  border-color: #4280b4!important;
+}
+.c-dark-theme .bg-danger {
+  background: #c14f4f!important;
+  background: linear-gradient(45deg,#d16767 0%,#c14f4f 100%)!important;
+  border-color: #c14f4f!important;
+}
+.c-dark-theme .table .thead-light th {
+  color: #e1e1e1;
+  background-color: rgba(255,255,255,.05);
+  border-color: rgba(255,255,255,.1);
+}
+.c-dark-theme .table thead th {
+  border-bottom-color: rgba(255,255,255,.1);
+}
+.c-dark-theme .table th, .c-dark-theme .table td {
+  border-top-color: rgba(255,255,255,.1);
+}
+.c-dark-theme .table-outline {
+  border-color: rgba(255,255,255,.1);
+}
+.c-dark-theme .table {
+  color: #e1e1e1;
+  background-color: transparent;
+}
+.c-dark-theme .table .thead-light th {
+  color: #e1e1e1;
+  background-color: rgba(255,255,255,.05);
+  border-color: rgba(255,255,255,.1);
+}
+.c-dark-theme .table thead th {
+  border-bottom-color: rgba(255,255,255,.1);
+}.c-dark-theme .table thead th {
+  color: #e1e1e1;
+  background-color: rgba(255,255,255,.05);
+  border-color: rgba(255,255,255,.1);
+}
+.c-dark-theme .table-hover tbody tr:hover {
+    color: #e1e1e1;
+    background-color: rgba(255,255,255,.1);
+}
+.c-dark-theme .card-footer {
+  background-color: #20202a;
+  border-color: #181924;
+}
+.c-dark-theme .jumbotron {
+  background-color: rgba(255,255,255,.1);
+}
+.c-dark-theme .nav-pills .nav-link.active, .c-dark-theme .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #4638c2;
+}
+.c-dark-theme .nav-tabs .nav-link.active, .c-dark-theme .nav-tabs .show>.nav-link {
+  color: #fff;
+  background-color: #4638c2;
+}
+.c-dark-theme .c-header .c-header-toggler {
+  color: rgba(255,255,255,.75);
+  border-color: rgba(255,255,255,.1);
+}
+.c-dark-theme .bg-light {
+  background-color: #20202a!important;
+}
+.c-dark-theme .dropdown-item {
+  color: #e1e1e1;
+}
+.c-dark-theme .dropdown-menu {
+  color: #e1e1e1;
+  background-color: #34343b;
+  border-color: #181924;
+}
+.c-dark-theme .dropdown-item:hover, .c-dark-theme .dropdown-item:focus {
+  color: #e1e1e1;
+  background-color: rgba(255,255,255,.1);
+}
+.c-dark-theme .navbar.navbar-light .navbar-brand {
+  color:rgba(255, 255, 255, 0.75)
+}
+.c-dark-theme .form-control {
+  color: #e1e1e1;
+  background-color: rgba(255,255,255,.1);
+  border-color: rgba(255,255,255,.15);
+}
+.c-dark-theme .form-control:-internal-autofill-selected {
+  color: #e1e1e1!important;
+  background-color: rgba(255,255,255,.1)!important;
+  border-color: rgba(255,255,255,.15);
+}
+.c-dark-theme input:-webkit-autofill,
+.c-dark-theme input:-webkit-autofill:hover, 
+.c-dark-theme input:-webkit-autofill:focus
+.c-dark-theme input:-webkit-autofill, 
+.c-dark-theme textarea:-webkit-autofill,
+.c-dark-theme textarea:-webkit-autofill:hover
+.c-dark-theme textarea:-webkit-autofill:focus,
+.c-dark-theme select:-webkit-autofill,
+.c-dark-theme select:-webkit-autofill:hover,
+.c-dark-theme select:-webkit-autofill:focus {
+  color: #e1e1e1!important;
+  background-color: rgba(255,255,255,.1)!important;
+  border-color: rgba(255,255,255,.15);
+
+}
+@-webkit-keyframes autofill {
+  to {
+    color: inherit;
+    background:  rgba(255,255,255,.1);
+    
+  }
+}
+ 
+.c-dark-theme input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+.c-dark-theme pre {
+  color: #f5f5f5;
+  scrollbar-face-color: #367CD2;
+  scrollbar-shadow-color: #FFFFFF;
+  scrollbar-highlight-color: #FFFFFF;
+  scrollbar-3dlight-color: #FFFFFF;
+  scrollbar-darkshadow-color: #FFFFFF;
+  scrollbar-track-color: #FFFFFF;
+  scrollbar-arrow-color: #FFFFFF;
+  overflow:scroll;
+}
+pre {
+  height: 300px;
+}
+/* Let's get this party started */
+.cdark-theme pre::-webkit-scrollbar {
+width: 12px;
+}
+
+/* Track */
+.cdark-theme pre::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+/* Handle */
+.cdark-theme pre::-webkit-scrollbar-thumb {
+-webkit-border-radius: 10px;
+border-radius: 10px;
+background: #181924; 
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}

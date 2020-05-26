@@ -1,0 +1,55 @@
+{
+    "name": "NodeAPI",
+    "version": "1.0.0",
+    "author": "Evgeny Aleksandrov",
+    "description": "Simple example of RESTful API with Node.js and passport",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www",
+        "test": "node ./test/server.test.js",
+        "generate": "node ./generateData.js"
+    },
+    "dependencies": {
+        "@grpc/proto-loader": "^0.5.4",
+        "body-parser": "^1.18.x",
+        "cors": "^2.8.5",
+        "express": "^4.16.x",
+        "faker": "^4.1.x",
+        "google-protobuf": "^3.12.1",
+        "grpc": "^1.24.2",
+        "mongoose": "^5.7.6",
+        "nconf": "^0.10.x",
+        "oauth2orize": "^1.11.x",
+        "passport": "^0.4.x",
+        "passport-http": "^0.3.x",
+        "passport-http-bearer": "^1.0.x",
+        "passport-oauth2-client-password": "^0.1.x",
+        "winston": "^3.2.x"
+    },
+    "devDependencies": {
+        "superagent": "^5.1.0",
+        "tape": "^4.9.x"
+    },
+    "jshintConfig": {
+        "curly": true,
+        "eqeqeq": true,
+        "immed": true,
+        "latedef": false,
+        "newcap": false,
+        "noarg": true,
+        "sub": true,
+        "undef": true,
+        "boss": true,
+        "eqnull": true,
+        "strict": false,
+        "scripturl": true,
+        "evil": true,
+        "globals": {
+            "location": true,
+            "printStackTrace": false
+        },
+        "browser": true,
+        "node": true
+    },
+    "license": "MIT"
+}

@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+var PROTO_PATH = __dirname + '/../../protos/auth.proto';
+var grpc = require('grpc');
+var protoLoader = require('@grpc/proto-loader');
+var packageDefinition = protoLoader.loadSync(
+  PROTO_PATH,
+  {
+    keepCase: true,
+    longs: String,
+    enums: String,
+    defaults: true,
+    oneofs: true
+  });
+var auth_proto = grpc.loadPackageDefinition(packageDefinition).auth;
+
+var libs = process.cwd() + '/libs/';
+var db = require(libs + 'db/mongoose');
+var oauth = require(libs + 'model/accessToken');
+function checkAuth(call, callback) {
+  console.log(call.request.token)
+  oauth.findOne({ token: call.request.token }, function (err, res) {
+    if (!err && res) {
+      callback(null, { userId: res.userId });
+    } else {
+
+      callback(null, { userId: -1 });
+    }
+  })
+
+}
+
+var server = new grpc.Server();
+server.addService(auth_proto.Tokenizer.service, { checkToken: checkAuth });
+server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
+server.start();

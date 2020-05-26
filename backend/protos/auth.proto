@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package auth;
+
+// The greeting service definition.
+service Tokenizer {
+  // Sends a greeting
+  rpc checkToken (Request) returns (Response) {}
+}
+
+// The request message containing the user's name.
+message Request {
+  string token = 1;
+}
+
+// The response message containing the greetings
+message Response {
+  string userId = 1;
+}

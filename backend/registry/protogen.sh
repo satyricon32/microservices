@@ -1,0 +1,1 @@
+protoc --proto_path=./../protos   --php_out=./   --grpc_out=./   --plugin=protoc-gen-grpc=./plugins/opt/grpc_php_plugin   ./../protos/auth.proto
