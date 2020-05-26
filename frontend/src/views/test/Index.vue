@@ -211,12 +211,6 @@ export default {
             borderColor: "#0074d9a5",
             data: this.chartData
           },
-          {
-            label: "Количество запросов к монолиту",
-            backgroundColor: "transparent",
-            borderColor: "rgb(228,102,81,0.5)",
-            data: this.chartData2
-          }
         ];
       }
     }
@@ -314,7 +308,6 @@ export default {
           this.chartLabels.push(this.currentTime);
           this.currentTime++;
           this.chartData.push(dr);
-          this.chartData2.push(dr - rand(5, 25));
           this.totalDoneRequest += dr;
           this.doneRequests = 0
         }        
