@@ -16,7 +16,7 @@
         "express": "^4.16.x",
         "faker": "^4.1.x",
         "google-protobuf": "^3.12.1",
-        "grpc": "^1.24.2",
+        "grpc": "^1.24.9",
         "mongoose": "^5.7.6",
         "nconf": "^0.10.x",
         "oauth2orize": "^1.11.x",
